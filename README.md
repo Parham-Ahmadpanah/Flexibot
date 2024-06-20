@@ -6,7 +6,7 @@ Initially, I experimented with various body designs, eventually settling on an e
 Actuators:
 To drive the robot’s movements, I utilized 16 MG90S servomotors controlled through an Arduino Uno board in collaboration with a PCA9685 module. Each MG90S servomotor features a 5V power pin, a ground pin, and a PWM pin. Given the limited number of PWM pins on the Arduino Uno board, I integrated the PCA9685 module, which provides 16 additional PWM pins for seamless control of all 16 servomotors.
 
-![Electronic Circuit](Data\Img.png)
+![Electronic Circuit](Data/Img.png)
 
 Sensor:
 An important component of this project is the camera sensor employed for tracking the end effector and cigarette butts. By training a model on YOLOv8 with classes for cigarettes and end effectors, the camera effectively detects bounding boxes around these objects. By finding the coordinates of these bounding boxes, the robot can accurately estimate the positions of the detected objects, aided by the fixed positioning of the camera.
