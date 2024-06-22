@@ -9,7 +9,7 @@ Actuators:
 To drive the robot’s movements, I utilized 16 MG90S servomotors controlled through an Arduino Uno board in collaboration with a PCA9685 module. Each MG90S servomotor features a 5V power pin, a ground pin, and a PWM pin. Given the limited number of PWM pins on the Arduino Uno board, I integrated the PCA9685 module, which provides 16 additional PWM pins for seamless control of all 16 servomotors.
 
 <div style="display: flex;">
-    <img src="Data\Img1.png" alt="Image 1" style="width: 30%;">
+    <img src="Data\Img1.png" alt="Image 1" style="width: 50%;">
     <img src="Data\Img2.jpg" alt="Image 2" style="width: 30%;">
 </div>
 
