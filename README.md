@@ -15,7 +15,7 @@ To drive the robot’s movements, I utilized 16 MG90S servomotors controlled thr
 
 For grabing the cigar butts I used an air pump (12v, Debi:15Lit/min). I control it using a mosfet, a power source, and an arduino digital pin.
 <div style="display: flex;">
-    <img src="Data\Img2.jpg" alt="Image 3" style="width: 30%;">
+    <img src="Data\Img3.jpg" alt="Image 3" style="width: 30%;">
 </div>
 
 Sensor:
