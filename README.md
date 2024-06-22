@@ -1,9 +1,5 @@
 # Flexibot
 In this project, a continuum robot is developed with 16 degrees of freedom (16 actuators) integrated with computer vision capabilities. The design of this robot draws inspiration from nature, particularly from snakes, and is designed for the purpose of collecting cigarette butts from the ground.
-<!-- ![Flexibot_detection](Data/Detection.gif) -->
-<video width="320" height="240" controls>
-  <source src="Data/Detection.gif" type="video/gif">
-</video>
 
 ## Bringing the Idea to Life
 Body:
@@ -18,4 +14,14 @@ To drive the robot’s movements, I utilized 16 MG90S servomotors controlled thr
 Sensor:
 An important component of this project is the camera sensor employed for tracking the end effector and cigarette butts. By training a model on YOLOv8 with classes for cigarettes and end effectors, the camera effectively detects bounding boxes around these objects. By finding the coordinates of these bounding boxes, the robot can accurately estimate the positions of the detected objects, aided by the fixed positioning of the camera.
 
+## Phase 1: Detection
+First I gathered a dataset for cigar butts and the end effector of Flexibot. After augmentation, I had over 4600 images split for train, validation, and test. After several times, I trained the model with YOLOv8, and I reached the desired one that detected every cigar butt and the end effector simultaneously.
+![Flexibot_detection](Data/Detection.gif)
+<video width="320" height="240" controls>
+  <source src="Data/Detection.gif" type="video/gif">
+</video>
 
+## Phase 2: Path Planning
+First, I programmed the motors and connected them to my Python environment using the serial port. After controlling each motor angle, I could save the data of the motor angles with the coordination of the end effector in the image. With this data, I am capable of using it for controlling the end effector based on its coordination.
+
+To be continued ...
