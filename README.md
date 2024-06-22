@@ -17,7 +17,7 @@ An important component of this project is the camera sensor employed for trackin
 ## Phase 1: Detection
 First I gathered a dataset for cigar butts and the end effector of Flexibot. After augmentation, I had over 4600 images split for train, validation, and test. After several times, I trained the model with YOLOv8, and I reached the desired one that detected every cigar butt and the end effector simultaneously.
 ![Flexibot_detection](Data/Detection.gif)
-<video width="320" height="240" controls>
+<video width="640" height="360" controls>
   <source src="Data/Detection.gif" type="video/gif">
 </video>
 
