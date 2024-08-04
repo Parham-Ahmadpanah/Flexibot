@@ -22,7 +22,7 @@ Sensor:
 An important component of this project is the camera sensor employed for tracking the end effector and cigarette butts. By training a model on YOLOv8 with classes for cigarettes and end effectors, the camera effectively detects bounding boxes around these objects. By finding the coordinates of these bounding boxes, the robot can accurately estimate the positions of the detected objects, aided by the fixed positioning of the camera.
 
 ## Phase 1: Detection
-First I gathered a dataset for cigar butts and the end effector of Flexibot. After augmentation, I had over 4600 images split for train, validation, and test. After several times, I trained the model with YOLOv8, and I reached the desired one that detected every cigar butt and the end effector simultaneously.
+Firstly, I gathered a dataset for cigar butts and the end effector of Flexibot. After augmentation, I had over 4600 images splitted for train, validation, and test. After several times, I trained the model with YOLOv8, and I reached the desired one that detected every cigar butt and the end effector simultaneously.
 ![Flexibot_detection](Data/Detection1.gif)
 <video width="640" height="360" controls>
   <source src="Data/Detection1.gif" type="video/gif">
