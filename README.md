@@ -1,5 +1,5 @@
 # Flexibot
-In this project, a continuum robot is developed with 16 degrees of freedom (16 actuators) integrated with computer vision capabilities. The design of this robot draws inspiration from nature, particularly from snakes, and is designed for the purpose of collecting cigarette butts from the ground.
+In this project, a continuum robot is developed with 8 degrees of freedom (16 actuators) integrated with computer vision capabilities. The design of this robot draws inspiration from nature, particularly from snakes, and is designed for the purpose of collecting cigarette butts from the ground.
 
 ## Bringing the Idea to Life
 Body:
@@ -31,4 +31,6 @@ Firstly, I gathered a dataset for cigar butts and the end effector of Flexibot. 
 ## Phase 2: Path Planning
 First, I programmed the motors and connected them to my Python environment using the serial port. After controlling each motor angle, I could save the data of the motor angles with the coordination of the end effector in the image. With this data, I am capable of using it for controlling the end effector based on its coordination.
 
-To be continued (after publishing the paper)...
+Right now, I am working on its controller. ​Firstly, I am simulating it in PyBullet to train first ​policy for its controller using Reinforcement ​learning. After the initial training, second stage ​would be in the actual env with offline ​dataset.
+
+To be continued ...
